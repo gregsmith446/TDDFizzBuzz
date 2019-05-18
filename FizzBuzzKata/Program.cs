@@ -14,7 +14,21 @@ namespace FizzBuzzKata
     {
         public string FizzBuzz(int input)
         {
-            return "1";
+            string result = String.Empty;
+
+            if (input % 3 == 0)
+            {
+                result = "Fizz";
+            }
+            if (input % 5 == 0)
+            {
+                result = result + "Buzz";
+            }
+            if (result == String.Empty)
+            {
+                result = input.ToString();
+            }
+            return result;
         }
     }
 }
