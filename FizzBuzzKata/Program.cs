@@ -6,7 +6,14 @@ namespace FizzBuzzKata
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // create instance
+            FizzBuzzer fb = new FizzBuzzer();
+
+            // create input data 0 through 100 + print result
+            for (int i = 0; i < 100; i++)
+            {
+                Console.WriteLine(fb.FizzBuzz(i)); 
+            }
         }
     }
 
